@@ -1,17 +1,11 @@
 const palindromes = function (str) {
     //Remove spaces and punctuations
     const strArray = str.split(/[^\w]+/);
-    console.log(strArray)
-
     const filteredString = strArray.join("");
-    console.log(filteredString)
-
-    
-    let length = filteredString.length;
-    console.log(length);
 
     //loop through the string halfway
     const middle = Math.floor(length / 2);
+    let length = filteredString.length;
 
     for (let index = 0; index < middle; index++) {
         const frontChar = filteredString[index].toLowerCase();
