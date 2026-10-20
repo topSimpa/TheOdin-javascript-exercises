@@ -8,7 +8,7 @@ const permutations = function (set) {
   const arrangements = [];
   const lastNumber = set[length - 1];
   const previous = permutations(set.slice(0, -1));
-  //permutatio of a set that doesn't include lastNumber
+  //permutation of a set that doesn't include lastNumber
 
   previous.forEach((item) => {
     for (let start = 0; start < length; start++) {
